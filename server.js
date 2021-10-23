@@ -5,6 +5,6 @@ const PORT = 3000;
 app.get("/", (req, res) => {
   res.send({ message: "ok" });
 });
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server has started on port ${PORT}`);
 });
