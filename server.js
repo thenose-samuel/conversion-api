@@ -31,8 +31,6 @@ app.get("/api", (req, res) => {
 app.get("/*", (req, res) => {
   res.status(404).send(_404Page);
 });
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server has started on port ${PORT}`);
 });
-
-//process.env.PORT
